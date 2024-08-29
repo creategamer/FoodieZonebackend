@@ -21,9 +21,9 @@ const connect = () => {
 
 app.use(cookieParser())
 app.use(express.json())
-app.use("/api/auth", authRouters)
-app.use("/api/users", userRouters)
-app.use("/api/admin/", adminRouters)
+app.use("/api/auth", authRouters);
+app.use("/api/users", userRouters);
+app.use("/api/admin/", adminRouters);
 app.use("/api/order", orderRouters)
 app.use("/api/Finalorder", FinalOrderRouters)
 
@@ -38,6 +38,8 @@ app.use("/api/Finalorder", FinalOrderRouters)
 //         message,
 //     })
 // })
+
+
 
 // Error Handling Middleware
 app.use((err, req, res, next) => {
